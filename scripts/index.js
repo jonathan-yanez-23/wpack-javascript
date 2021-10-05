@@ -1,4 +1,5 @@
 console.log("index.js")
+
 window.onload = function(){
     // Variable que indica que vista esta activa
     var showView = "landingexplain";
@@ -10,7 +11,7 @@ window.onload = function(){
             showView = "landingexplain";
             document.getElementsByClassName("landingexplain")[0].style.display = '';
             document.getElementsByClassName("landinglist")[0].style.display = "none";
-            document.getElementsByClassName("landingdetail")[0].style.display = "none"
+            document.getElementsByClassName("landingdetail")[0].style.display = "none";
         }
     });
 
@@ -21,8 +22,9 @@ window.onload = function(){
         else{
             showView = "landinglist";
             document.getElementsByClassName("landingexplain")[0].style.display = 'none';
-            document.getElementsByClassName("landinglist")[0].style.display = "flex";
+            document.getElementsByClassName("landinglist")[0].style.display = "block" ;
             document.getElementsByClassName("landingdetail")[0].style.display = "none"
+            List.fillList(arrayPokemon);
         }
     });
     

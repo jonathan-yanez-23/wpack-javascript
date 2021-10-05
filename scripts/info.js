@@ -10,6 +10,29 @@ class Pokemon{
         this._urlPicture = urlPicture;
         this._types = types;
     }
+    
+    get name(){
+        return this._name;
+    }
+    get idPkdex(){
+        return this._idPkdex;
+    }
+    get baseExperience(){
+        return this._baseExperience;
+    }
+    get height(){
+        return this._height;
+    }
+    get weight(){
+        return this._weight;
+    }
+    get types(){
+        return this._types;
+    }
+    get urlPicture(){
+        return this._urlPicture;
+    }
+
 
 }
 

@@ -2,9 +2,6 @@ $backgrounds_proyectos: "bobinatesla_background.jpg","controlremoto_background.j
 body{
     margin: 0;
     font-family: Arial;
-    :hover{
-        color: red;
-    }
 }
 
 
@@ -22,14 +19,21 @@ header{
 
 
 main{
-    background-color: lightgrey;
+
     // Se ocultan por defecto el detail y el list
     .landinglist{
         display: none;
+        flex-direction: column;
+        background-color: lightgreen;
         .listelement{
-            background-color: lightcoral;
+            display: flex;
+            &:hover{
+                background-color: lightcoral;
+            }
         }
+        
     }
+
     .landingdetail{
         display: none;
     }
