@@ -1,0 +1,41 @@
+$backgrounds_proyectos: "bobinatesla_background.jpg","controlremoto_background.jpg","lucesneon_background.jpg","rayosx_background.jpg","wirelesslight_background.jpg" ;
+body{
+    margin: 0;
+    font-family: Arial;
+    :hover{
+        color: red;
+    }
+}
+
+
+header{
+    background-color:lightblue;
+    display: flex;
+
+    justify-content: center;
+    .links{
+        list-style: none;
+        display: flex;
+    }
+}
+
+
+
+main{
+    background-color: lightgrey;
+    // Se ocultan por defecto el detail y el list
+    .landinglist{
+        display: none;
+        .listelement{
+            background-color: lightcoral;
+        }
+    }
+    .landingdetail{
+        display: none;
+    }
+}
+
+footer{
+    background-color: lightpink;
+}
+
